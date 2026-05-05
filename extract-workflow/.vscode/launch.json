@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Streamlit App",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "/usr/local/bin/streamlit", // 👈 Linux/macOS con entorno virtual
+      "args": [
+        "run",
+        "app.py"
+      ],
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
