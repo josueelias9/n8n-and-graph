@@ -1,0 +1,7 @@
+services:
+
+
+  extract-workflow:
+    volumes:
+      - .:/workspace
+    command: sleep infinity
