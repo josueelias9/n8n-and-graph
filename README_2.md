@@ -1,13 +1,7 @@
 start the project with compose
 
 ```sh
-docker compose --profile gpu-nvidia build
-```
-
-This command is for:
-
-```sh
-docker compose --profile gpu-nvidia up
+docker compose --profile gpu-nvidia up --build -d
 ```
 
 (optional) use a template to start working

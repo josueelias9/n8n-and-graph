@@ -1,9 +1,15 @@
-FROM python:3.11-slim
+FROM python:3.11-trixie
 
-RUN pip install psycopg2-binary
+WORKDIR /josue_dir
 
-RUN pip install python-dotenv
+COPY . .
 
-RUN pip install streamlit
+RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["streamlit", "run", "/workspace/extract-workflow/app.py"]
+# RUN pip install psycopg2-binary
+
+# RUN pip install python-dotenv
+
+# RUN pip install streamlit
+
+# CMD ["streamlit", "run", "/workspace/extract-workflow/app.py"]
