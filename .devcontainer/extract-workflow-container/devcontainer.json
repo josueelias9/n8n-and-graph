@@ -1,7 +1,18 @@
 {
   "name": "Extract Workflow Container",
-  "dockerComposeFile": ["../../docker-compose.yml"],
+  "dockerComposeFile": ["../../docker-compose.yml","../../docker-compose.extract-workflow.yml"],
   "service": "extract-workflow",
   "shutdownAction": "none",
-  "workspaceFolder": "/workspace/extract-workflow"
+  "workspaceFolder": "/workspace/extract-workflow",
+  // "runServices": ["postgres", "n8n-import", "n8n","qdrant","ollama-gpu","ollama-pull-llama-gpu","extract-workflow"]
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "workbench.colorTheme": "Tomorrow Night Blue"
+      },
+      "extensions": [
+        "ms-python.python"
+      ]
+    }
+  }
 }
