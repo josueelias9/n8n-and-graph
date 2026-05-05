@@ -1,7 +1,11 @@
+# - How to use it
+
+## -- save workflows 
+
 start the project with compose
 
 ```sh
-docker compose --profile gpu-nvidia up --build -d
+docker compose --profile gpu-nvidia up --build
 ```
 
 (optional) use a template to start working
@@ -21,3 +25,23 @@ delete everything once you are done
 ```sh
 docker compose --profile gpu-nvidia down -v
 ```
+
+## -- container approach
+
+TODO
+
+# - Keep in sync
+
+## -- test original repo
+
+- delete local main branch
+- checkout to upstream/main
+- test
+
+## -- sync
+
+TODO
+
+## -- misc
+
+- it takes the id of the json, the file name is just a reference
